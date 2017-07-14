@@ -1,0 +1,93 @@
+body, html {
+  margin: 0px;
+  height: 100vh;
+  font-family: "Shadows Into Light", sans-serif;
+}
+
+.pl {
+  position: static;
+  z-index: -20;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.first {
+  background-image: url('images/pl-one.jpg');
+  border-bottom: 2px solid black;
+}
+
+.second {
+  background-image: url('images/pl-two.jpg');
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.third {
+  border-top: 2px solid black;
+  background-image: url('images/pl-three.jpg');
+}
+
+/*SECOND PARALLAX*/
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: white;
+  margin: 0;
+}
+
+.lyrics {
+  background-color: black;
+  opacity: 0.6;
+  display: inline-block;
+  padding: 5px 30px;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 25px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 100vh;
+}
+
+.parallax__layer--one {
+  transform: translateZ(0);
+  margin-top: -260px;
+  margin-left: 20px;
+  width: 800px;
+}
+
+.parallax__layer--two {
+  transform: translateZ(-1px) scale(2);
+  /*margin-top: 0px;*/
+  width: 500px;
+  margin-left: 200px;
+}
+
+.parallax__layer--three {
+  transform: translateZ(-2px) scale(2);
+  /*margin-top: 400px;
+  margin-left: 600px;*/
+  margin: 400px auto 0px;
+  font-size: 30px;
+  width: 700px;
+}
+
+#strong {
+  text-transform: uppercase;
+}
